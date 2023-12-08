@@ -13,3 +13,23 @@ TEST_CASE("test primes", "[is_prime]")
   REQUIRE(is_prime(8) == false);
   REQUIRE(is_prime(9) == false);
 }
+
+TEST_CASE("test absolute", "[absolute]")
+{
+  /*number <= -1  -->  positive number
+  if positive, return positive
+  */
+  REQUIRE(absolute(2) == 2);
+  REQUIRE(absolute(-2) == 2);
+  REQUIRE(absolute(4) == 4);
+  REQUIRE(absolute(-4) == 4);
+}
+
+TEST_CASE("test power", "[power]")
+{
+  //power(number, exponent)
+  CHECK(power(2, 2) == 4);
+  CHECK(power(2, 3) == 6);
+  CHECK(power(2, 4) == 16);
+  CHECK(power(2, 5) == 32);
+}
