@@ -29,7 +29,7 @@ TEST_CASE("test power", "[power]")
 {
   //power(number, exponent)
   CHECK(power(2, 2) == 4);
-  CHECK(power(2, 3) == 6);
+  CHECK(power(2, 3) == 6);  //this is to purposely get a fail
   CHECK(power(2, 4) == 16);
   CHECK(power(2, 5) == 32);
 }
